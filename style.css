@@ -1,0 +1,204 @@
+/* 🔹 RESET GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 FONDO GENERAL */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #ffd1dc);
+}
+
+/* 🔹 HEADER */
+header {
+  background: linear-gradient(90deg, #ff66a3, #ff3385);
+  color: white;
+  padding: 15px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* 🔹 MENU */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe6f0;
+  transform: scale(1.1);
+}
+
+/* 🔹 BUSCADOR */
+#buscador {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* 🔹 CONTENEDOR DE PRODUCTOS */
+#productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* 🔹 TARJETA DE PRODUCTO */
+.producto {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* 🔹 IMAGEN */
+.producto img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* 🔹 PRECIO */
+.precio {
+  font-weight: bold;
+  color: green;
+}
+
+/* 🔹 FONDO PRODUCTOS */
+.fondo-productos {
+  background-image: url("img/fondo.png");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 🔥 ZONA DE COMPRA */
+.zona-compra {
+  background-image: url("img/compra.png");
+  background-size: cover;
+  background-position: center;
+
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 15px;
+
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+
+  color: white;
+}
+
+/* 🔹 BOTÓN */
+.zona-compra button {
+  background: #00c853;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.zona-compra button:hover {
+  background: #00e676;
+  transform: scale(1.05);
+}
+
+/* 🏪 RETIRO */
+#datos-retiro {
+  background-image: url("img/retiro.png");
+  background-size: cover;
+  background-position: center;
+
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+
+  color: white;
+}
+
+/* 🚚 ENVÍO */
+#datos-envio {
+  background-image: url("img/envio.png");
+  background-size: cover;
+  background-position: center;
+
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+
+  color: white;
+}
+
+/* 🔹 INPUTS */
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+/* 🔹 CARRITO */
+#carrito {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* 🔹 CONTACTO */
+#contacto {
+  background-image: url("img/contacto.png");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 10px;
+
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+
+  color: white;
+}

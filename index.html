@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" href="img/icono.png" type="image/png">
+  <meta charset="UTF-8">
+  <title>TecnoVerso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🛒 TecnoVerso</h1>
+  <nav>
+    <a onclick="mostrarHome()">Home</a>
+    <a onclick="mostrarContacto()">Informacion</a>
+    <input type="text" id="buscador" placeholder="Buscar producto..." onkeyup="buscarProducto()">
+  </nav>
+</header>
+
+<hr>
+
+<!-- 🏠 HOME -->
+<div id="home">
+
+  <!-- PRODUCTOS -->
+  <div class="fondo-productos">
+    <div id="productos"></div>
+  </div>
+
+  <!-- CARRITO -->
+  <h2>🛒 Carrito</h2>
+  <ul id="carrito"></ul>
+
+  <!-- ZONA COMPRA -->
+  <div class="zona-compra">
+
+    <h2>🚚 ¿Cómo querés recibir tu pedido?</h2>
+
+    <select id="envio" onchange="toggleEnvio()">
+      <option value="retiro">Retiro en persona</option>
+      <option value="domicilio">Envío a domicilio</option>
+    </select>
+
+    <br><br>
+
+    <!-- 🏪 RETIRO -->
+    <div id="datos-retiro">
+      <h3>🏪 Datos para retiro</h3>
+
+      <input id="nombre" placeholder="Nombre"><br><br>
+      <input id="apellido" placeholder="Apellido"><br><br>
+      <input id="dni" placeholder="DNI"><br><br>
+      <input id="telefono" placeholder="Teléfono"><br><br>
+      <input id="email" placeholder="Correo electrónico"><br><br>
+    </div>
+
+    <!-- 🚚 ENVÍO -->
+    <div id="datos-envio" style="display:none;">
+      <h3>🚚 Datos de envío</h3>
+
+      <input id="nombreEnvio" placeholder="Nombre"><br><br>
+      <input id="apellidoEnvio" placeholder="Apellido"><br><br>
+      <input id="direccion" placeholder="Dirección"><br><br>
+      <input id="ciudad" placeholder="Ciudad"><br><br>
+      <input id="provincia" placeholder="Provincia"><br><br>
+      <input id="pais" placeholder="País"><br><br>
+      <input id="codigoPostal" placeholder="Código Postal"><br><br>
+      <input id="telefonoEnvio" placeholder="Teléfono"><br><br>
+    </div>
+
+    <br>
+
+    <!-- BOTÓN -->
+    <button onclick="comprar()">Ordenar</button>
+
+  </div>
+
+</div>
+
+<!-- 📞 CONTACTO -->
+<div id="contacto" style="display:none;">
+  <h2>📞 Contacto</h2>
+
+  <p><strong>Nombre:</strong> Tomi</p>
+
+  <p>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/5493492244105" target="_blank">
+      +54 9 3492 244105
+    </a>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:b35063210@gmail.com">
+      b35063210@gmail.com
+    </a>
+  </p>
+
+  <hr>
+
+  <h3>💡 Sobre TecnoVerso</h3>
+
+  <p>
+    En <strong>TecnoVerso</strong> nos dedicamos a ofrecer productos tecnológicos y accesorios de calidad al mejor precio.
+    Nuestro objetivo es brindarte una experiencia de compra simple, rápida y segura.
+  </p>
+
+  <p>
+    Trabajamos con una variedad de productos como auriculares, teclados, smartwatches,
+    cargadores y mucho más, siempre buscando lo mejor para vos.
+  </p>
+
+  <p>
+    🚚 Realizamos envíos a domicilio y también ofrecemos retiro en persona.  
+    💬 Estamos disponibles para cualquier consulta o pedido especial.
+  </p>
+
+  <p>
+    ❤️ Gracias por confiar en TecnoVerso.
+  </p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
